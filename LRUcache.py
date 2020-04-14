@@ -1,11 +1,28 @@
 class LRUCache():
 
-    def _init_(self):
-        self.list=[]
+    def _init_(self,k):
+        self.k = k
+    list = []        
 
     def put(self,k):
-        pass
+        if len(self.list) == 6:
+	        if k not in self.list:
+		        self.list.pop(0)
+		        self.list.append(k)
+		
+	        else:
+		        self.list.remove(k)
+		        self.list.append(k)
+        else:
+	        if k not in self.list:
+		        self.list.append(k)
+	        else:
+		        self.list.remove(k)
+		        self.list.append(k)
+
     def get(self,k): 
-        pass
-    def get_cache(self,k):
-        pass
+        return k in self.list
+    def get_cache(self):
+        return self.list
+
+    
