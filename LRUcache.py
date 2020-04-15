@@ -20,8 +20,8 @@ class LRUCache():
 		        self.list.remove(k)
 		        self.list.append(k)
 
-    def get(self,k): 
-        return k in self.list
+    def get(self): 
+        return self.list[0]
     def get_cache(self):
         return self.list
 
