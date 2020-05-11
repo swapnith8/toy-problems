@@ -72,3 +72,14 @@ body {
   .AddB:hover {
     background-color: #bbb;
   }
+
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  .close:hover {
+    background-color: gray;
+    color: white;
+  }
