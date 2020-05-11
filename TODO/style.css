@@ -25,6 +25,11 @@ body {
   ul li:hover {
     background: #ddd;
   }
+  ul li.checked {
+    background: aqua;
+    color: black;
+    text-decoration: line-through;
+  }
   ul li.checked::before {
     content: '';
     position: absolute;
@@ -83,8 +88,14 @@ body {
     background-color: gray;
     color: white;
   }
-  ul li.checked {
-    background: aqua;
+  #clear{
+    width: 30%;
+    font-size: xx-large;
+    margin: 30px 35%;
+    background-color: palevioletred;
     color: black;
-    text-decoration: line-through;
+  }
+  #clear:hover{
+    background-color: palevioletred;
+    color: black;
   }
