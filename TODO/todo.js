@@ -15,6 +15,12 @@ for (i = 0; i < close.length; i++) {
   div.style.display = "none";
   }
 }
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+  ev.target.classList.toggle('checked');
+  }
+}, false);
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("Task").value;
